@@ -4,14 +4,16 @@
 
 To run:
 
- * cd into the dev folder
- * run the following command:
+* cd into the dev folder
+* run the following command:
+
     python3 manage.py runserver
- * then go to the following url : http://127.0.0.1:8000
+
+* then go to the following url : http://127.0.0.1:8000
 
 #### Working Urls (*May not be current*):
 
-  try:
+try:
     http://127.0.0.1:8000/account/login/
 
     http://127.0.0.1:8000/account/logout/
@@ -22,8 +24,10 @@ To run:
 
     http://127.0.0.1:8000/admin/
 
- Super User name: polygenesis
- Super User PW: cs480_2018
+Super User name: polygenesis
 
- Test profile name: test
- Test profile PW: cs480_2018
+Super User PW: cs480_2018
+
+Test profile name: test
+
+Test profile PW: cs480_2018
