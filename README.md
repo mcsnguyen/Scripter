@@ -1,17 +1,29 @@
-#Scripter 
+# Scripter
 
-Testing Vim for Windows.
+### This is the login system development branch for Scripter
 
+To run:
 
-How to run for now
+ * cd into the dev folder
+ * run the following command:
+    python3 manage.py runserver
+ * then go to the following url : http://127.0.0.1:8000
 
-using terminal :
+#### Working Urls (*May not be current*):
 
-cd into the Scripter root folder
-run the following command: python manage.py runserver
-then go to the following url : http://127.0.0.1:8000
+  try:
+    http://127.0.0.1:8000/account/login/
 
+    http://127.0.0.1:8000/account/logout/
 
+*Check urls.py for built paths*
 
-HTML file for homepage will be located in Scripter-master/Scripter/scripter_app/templates/index.html
+#### For administration:
 
+    http://127.0.0.1:8000/admin/
+
+ Super User name: polygenesis
+ Super User PW: cs480_2018
+
+ Test profile name: test
+ Test profile PW: cs480_2018
