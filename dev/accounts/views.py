@@ -1,4 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, redirect
+from accounts.forms import RegistrationForm
 
 # Create your views here.
 def home(request):
@@ -7,4 +8,16 @@ def home(request):
 
     args = {'myname':name,
             'numbers': numbers}
-    return render(request, 'accounts/home.html', args) #HttpResponse('Home Page!')
+    return render(request, 'accounts/home.html', args)
+
+def register(request):
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/account')
+    else:
+        form = RegistrationForm()
+
+        args = {'form': form}
+        return render(request, 'accounts/reg_form.html', args)
