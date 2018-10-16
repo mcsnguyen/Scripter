@@ -19,47 +19,53 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarsExample09">
+
               {% if user.is_authenticated %}
+
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="/account">Home</a>
+                  <a class="nav-link" href="{% url 'home' %}">Home</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="/account/logout">Logout<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{% url 'logout' %}">Logout<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="/account/profile">Profile</a>
+                  <a class="nav-link" href="{% url 'view_profile' %}">Profile</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="/account/profile/edit">Edit Profile</a>
+                  <a class="nav-link" href="{% url 'edit_profile' %}">Edit Profile</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="/account/change-password">Change Password</a>
+                  <a class="nav-link" href="{% url 'change_password' %}">Change Password</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="/account/password_reset">Reset Password</a>
+                  <a class="nav-link" href="{% url 'password_reset' %}">Reset Password</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-md-0">
                 <input class="form-control" type="text" placeholder="Search" aria-label="Search">
               </form>
+
               {% else %}
+
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="/account">Home</a>
+                  <a class="nav-link" href="{% url 'home' %}">Home</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-md-0">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                      <a class="nav-link" href="/account/login">Login</a>
+                      <a class="nav-link" href="{% url 'login' %}">Login</a>
                   </li>
                   <li class="nav-item active">
-                      <a class="nav-link" href="/account/register">Register</a>
+                      <a class="nav-link" href="{% url 'register' %}">Register</a>
                   </li>
                 </ul>
               </form>
+
               {% endif  %}
+
             </div>
           </nav>
         </div>
