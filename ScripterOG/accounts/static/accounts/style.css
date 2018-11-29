@@ -1,0 +1,53 @@
+.button:hover{
+	background-color: #006400;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+  	-moz-border-radius-bottomright: 10px;
+  	-moz-border-radius-bottomleft: 10px;
+  	-webkit-border-radius: 10px 10px 10px 10px;
+  	border-radius: 10px 10px 10px 10px;
+}
+
+.shadow{
+    width: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadowNav{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.white{
+	background-color: white;
+}
+
+#grad1{
+	background-image: linear-gradient(to right, #4f8ff7, #b0caf4, #bcfbff);
+}
+
+#grad2{
+	background-image: linear-gradient(to right, #ffd600, #f7e065, #ffd600)
+}
+
+#grad3{
+	background-image: linear-gradient(#216828 5%, #299934 50%, #216828 95%);
+}
+
+div ul.center{
+	text-align: center;
+}
+
+div ul li{
+	display: inline;
+        list-style-type: none;
+}
+
+div ul li a.linkButton{
+        background-color: #006400;
+	border: 3px solid gold;
+ 	padding: 20px;
+}
+
+#submit{
+	background-color: #299934;
+}

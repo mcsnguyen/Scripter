@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects{% endblock %}
+
+{% block body %}
+<br>
+<div class="container rounded white shadow center-div">
+	<br>
+	<h1>Projects</h1>
+	</br>
+        <ul class="center">
+            <li><a href="{{ user.userprofile.current_upload.url }}" class="button rounded shadow linkButton">View Current Project</a></li>
+	    <li><a href="{{ user.userprofile.previous_upload.url }}" class="button rounded shadow linkButton">View Last Draft</a></li>
+	    <li><a href="{{ user.userprofile.upload_changes.url }}" class="button rounded shadow linkButton">View Difference</a></li>
+        </ul>
+        <br>
+</div>
+{% endblock %}
+
+
